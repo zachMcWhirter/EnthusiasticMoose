@@ -10,13 +10,16 @@ namespace EnthusiasticMoose
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine();
 
-            // Let the moose speak!
-            MooseSays("H I, I'M  E N T H U S I A S T I C !");
-            MooseSays("I really am enthusiastic");
-
             // As a question
             bool isTrue = MooseAsks("Is Canada real?");
-            Console.WriteLine(isTrue);
+            if (isTrue)
+            {
+                MooseSays("Really? It seems very unlikely.");
+            }
+            else
+            {
+                MooseSays("I  K N E W  I T !!!");
+            }
         }
         static bool MooseAsks(string question)
         {
